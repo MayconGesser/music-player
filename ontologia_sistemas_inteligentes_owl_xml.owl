@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/cunt/ontologies/2018/3/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/cunt/ontologies/2018/3/untitled-ontology-5">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#duracao_album"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_album"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Album"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_1803df9f_5906_43f5_a760_b0dba1ea6b30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_794db43a_4720_4ecf_9472_649a75437423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_0cd95ca8_4dda_411c_a646_c392161c9064"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_c0e80867_1ff5_4291_97b0_b865f890c8f1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_artista"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data_de_lancamento_album"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pais_de_origem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_3318ec07_da46_4019_9670_ec22122595d8"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_musica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_genero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artista"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_88e71268_8a64_4eba_ba3f_510564f8942f"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0cd95ca8_4dda_411c_a646_c392161c9064"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_1803df9f_5906_43f5_a760_b0dba1ea6b30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3318ec07_da46_4019_9670_ec22122595d8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_794db43a_4720_4ecf_9472_649a75437423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_88e71268_8a64_4eba_ba3f_510564f8942f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c0e80867_1ff5_4291_97b0_b865f890c8f1"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0cd95ca8_4dda_411c_a646_c392161c9064"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0cd95ca8_4dda_411c_a646_c392161c9064"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0cd95ca8_4dda_411c_a646_c392161c9064"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_1803df9f_5906_43f5_a760_b0dba1ea6b30"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_1803df9f_5906_43f5_a760_b0dba1ea6b30"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_1803df9f_5906_43f5_a760_b0dba1ea6b30"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3318ec07_da46_4019_9670_ec22122595d8"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3318ec07_da46_4019_9670_ec22122595d8"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3318ec07_da46_4019_9670_ec22122595d8"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#data_de_lancamento_album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracao_album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#data_de_lancamento_album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracao_album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_album"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_794db43a_4720_4ecf_9472_649a75437423"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_794db43a_4720_4ecf_9472_649a75437423"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_794db43a_4720_4ecf_9472_649a75437423"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_88e71268_8a64_4eba_ba3f_510564f8942f"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_88e71268_8a64_4eba_ba3f_510564f8942f"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_88e71268_8a64_4eba_ba3f_510564f8942f"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c0e80867_1ff5_4291_97b0_b865f890c8f1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c0e80867_1ff5_4291_97b0_b865f890c8f1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c0e80867_1ff5_4291_97b0_b865f890c8f1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#data_de_lancamento_album"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duracao_album"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_album"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_artista"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_genero"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_musica"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pais_de_origem"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#data_de_lancamento_album"/>
+        <Class IRI="#Album"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracao_album"/>
+        <Class IRI="#Album"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_album"/>
+        <Class IRI="#Album"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_artista"/>
+        <Class IRI="#Artista"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_genero"/>
+        <Class IRI="#Artista"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_genero"/>
+        <Class IRI="#Musica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_musica"/>
+        <Class IRI="#Musica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pais_de_origem"/>
+        <Class IRI="#Artista"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#data_de_lancamento_album"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracao_album"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_album"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_artista"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_genero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_musica"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pais_de_origem"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_0cd95ca8_4dda_411c_a646_c392161c9064</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Depeche Mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_1803df9f_5906_43f5_a760_b0dba1ea6b30</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Burzum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_3318ec07_da46_4019_9670_ec22122595d8</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Candlemass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_52723e3e_9e89_445b_ab1c_d82980dd044b</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Det Som Engang Var</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_62d9f517_1282_425c_9c26_64883bf34766</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">21st Century Schizoid Man</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_794db43a_4720_4ecf_9472_649a75437423</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Misfits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_88e71268_8a64_4eba_ba3f_510564f8942f</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">King Crimson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_c0e80867_1ff5_4291_97b0_b865f890c8f1</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Iron Maiden</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

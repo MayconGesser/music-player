@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/cunt/ontologies/2018/3/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/cunt/ontologies/2018/3/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/cunt/ontologies/2018/3/untitled-ontology-5"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Tropicalia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bruno_Mars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_artista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmPop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmMusicasAtuais"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sozinho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmMusicasAntigas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmMPB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internacional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtistaMPB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Natasha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#90-00"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nacional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sepultura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtistaPop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmNacional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#70-80"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vanessa_da_Mata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmInternacional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmRock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pais_de_origem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capital_Inicial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_genero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Megadeth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fogo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grenade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trust"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#She-Wolf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vermelho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pop"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ano_musica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Usuario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caetano_Veloso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Territory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome_musica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Finesse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nomad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blackened"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtistaRock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MPB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metallica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artista"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Atual"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#ano_musica"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Bruno_Mars"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bruno Mars</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Caetano_Veloso"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Caetano Veloso</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Capital_Inicial"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Capital Inicial</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmPop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectUnionOf>
+                <Class IRI="#ArtistaPop"/>
+                <DataHasValue>
+                    <DataProperty IRI="#nome_genero"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmPop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectUnionOf>
+                <Class IRI="#ArtistaPop"/>
+                <DataHasValue>
+                    <DataProperty IRI="#nome_genero"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Internacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectComplementOf>
+                <Class IRI="#Nacional"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MPB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <Class IRI="#Nacional"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_genero"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPB</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Megadeth"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Megadeth</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Metallica"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Metallica</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Nacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#pais_de_origem"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Brasil</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_genero"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rock"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_genero"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sepultura"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sepultura</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vanessa_da_Mata"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataHasValue>
+                <DataProperty IRI="#nome_artista"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vanessa da Mata</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#70-80"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#ano_musica"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1970</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1989</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#90-00"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#ano_musica"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1990</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2009</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ArtistaMPB"/>
+        <Class IRI="#Artista"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtistaPop"/>
+        <Class IRI="#Artista"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtistaRock"/>
+        <Class IRI="#Artista"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atual"/>
+        <Class IRI="#Decada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bruno_Mars"/>
+        <Class IRI="#ArtistaPop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caetano_Veloso"/>
+        <Class IRI="#ArtistaMPB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Capital_Inicial"/>
+        <Class IRI="#ArtistaRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internacional"/>
+        <Class IRI="#Local"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MPB"/>
+        <Class IRI="#Genero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Megadeth"/>
+        <Class IRI="#ArtistaRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metallica"/>
+        <Class IRI="#ArtistaRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nacional"/>
+        <Class IRI="#Local"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pop"/>
+        <Class IRI="#Genero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rock"/>
+        <Class IRI="#Genero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sepultura"/>
+        <Class IRI="#ArtistaRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vanessa_da_Mata"/>
+        <Class IRI="#ArtistaMPB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#70-80"/>
+        <Class IRI="#Decada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#90-00"/>
+        <Class IRI="#Decada"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#MPB"/>
+        <Class IRI="#Pop"/>
+        <Class IRI="#Rock"/>
+    </DisjointClasses>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ano_musica"/>
+        <NamedIndividual IRI="#Amado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#Amado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Vanessa da Mata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_genero"/>
+        <NamedIndividual IRI="#Amado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MPB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_de_origem"/>
+        <NamedIndividual IRI="#Amado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brasil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome_artista"/>
+        <NamedIndividual IRI="#Blackened"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metallica</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ano_musica"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_artista"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_genero"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nome_musica"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pais_de_origem"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ano_musica"/>
+        <Class IRI="#Musica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_artista"/>
+        <Class IRI="#Artista"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_genero"/>
+        <Class IRI="#Artista"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_genero"/>
+        <Class IRI="#Musica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome_musica"/>
+        <Class IRI="#Musica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pais_de_origem"/>
+        <Class IRI="#Artista"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ano_musica"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_artista"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_genero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome_musica"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pais_de_origem"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

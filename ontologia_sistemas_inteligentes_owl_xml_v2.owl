@@ -211,6 +211,94 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#InteresseEmInternacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Internacional"/>
+            <Class IRI="#Musica"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmInternacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Internacional"/>
+            <Class IRI="#Usuario"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmMPB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectUnionOf>
+                <Class IRI="#ArtistaMPB"/>
+                <DataHasValue>
+                    <DataProperty IRI="#nome_genero"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPB</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmMPB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectUnionOf>
+                <Class IRI="#ArtistaMPB"/>
+                <DataHasValue>
+                    <DataProperty IRI="#nome_genero"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPB</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmMusicasAntigas"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectUnionOf>
+                <Class IRI="#70-80"/>
+                <Class IRI="#90-00"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmMusicasAntigas"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectUnionOf>
+                <Class IRI="#70-80"/>
+                <Class IRI="#90-00"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmMusicasAtuais"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Atual"/>
+            <Class IRI="#Musica"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmMusicasAtuais"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Atual"/>
+            <Class IRI="#Usuario"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmNacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <Class IRI="#Nacional"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmNacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Nacional"/>
+            <Class IRI="#Usuario"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#InteresseEmPop"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
@@ -232,6 +320,32 @@
                 <DataHasValue>
                     <DataProperty IRI="#nome_genero"/>
                     <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmRock"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectUnionOf>
+                <Class IRI="#ArtistaRock"/>
+                <DataHasValue>
+                    <DataProperty IRI="#nome_genero"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteresseEmRock"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectUnionOf>
+                <Class IRI="#ArtistaRock"/>
+                <DataHasValue>
+                    <DataProperty IRI="#nome_genero"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
                 </DataHasValue>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
@@ -363,6 +477,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
+        <Class IRI="#Artista"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArtistaMPB"/>
         <Class IRI="#Artista"/>
     </SubClassOf>
@@ -391,8 +509,48 @@
         <Class IRI="#ArtistaRock"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Decada"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Genero"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmInternacional"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmMPB"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmMusicasAntigas"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmMusicasAtuais"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmNacional"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmPop"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteresseEmRock"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Internacional"/>
         <Class IRI="#Local"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MPB"/>
@@ -405,6 +563,10 @@
     <SubClassOf>
         <Class IRI="#Metallica"/>
         <Class IRI="#ArtistaRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musica"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Nacional"/>
@@ -421,6 +583,10 @@
     <SubClassOf>
         <Class IRI="#Sepultura"/>
         <Class IRI="#ArtistaRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Usuario"/>
+        <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vanessa_da_Mata"/>

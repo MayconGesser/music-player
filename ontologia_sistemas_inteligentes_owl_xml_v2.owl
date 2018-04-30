@@ -645,6 +645,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Musica"/>
+        <NamedIndividual IRI="#Finesse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Fogo"/>
     </ClassAssertion>
     <ClassAssertion>

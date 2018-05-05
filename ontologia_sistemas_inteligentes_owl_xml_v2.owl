@@ -67,6 +67,9 @@
         <NamedIndividual IRI="#Sozinho"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaAntiga"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Rock"/>
     </Declaration>
     <Declaration>
@@ -146,9 +149,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#She-Wolf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Vermelho"/>
@@ -279,7 +279,7 @@
             <Class IRI="#Usuario"/>
             <ObjectAllValuesFrom>
                 <ObjectProperty IRI="#ehInteressadoPor"/>
-                <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
+                <Class IRI="#MusicaAntiga"/>
             </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -304,6 +304,21 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MusicaAntiga"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#ano_musica"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MusicaInternacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
@@ -321,21 +336,6 @@
                 <ObjectProperty IRI="#ehCompostaPor"/>
                 <Class IRI="#ArtistaNacional"/>
             </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#ano_musica"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -415,6 +415,10 @@
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MusicaAntiga"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MusicaInternacional"/>
         <Class IRI="#Musica"/>
     </SubClassOf>
@@ -425,10 +429,6 @@
     <SubClassOf>
         <Class IRI="#Nacional"/>
         <Class IRI="#Local"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
-        <Class IRI="#Musica"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pop"/>
@@ -444,7 +444,7 @@
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Atual"/>
-        <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
+        <Class IRI="#MusicaAntiga"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#MusicaInternacional"/>
@@ -819,7 +819,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb</IRI>
+        <IRI>#MusicaAntiga</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MusicaAntiga</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

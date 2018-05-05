@@ -25,6 +25,9 @@
         <Class IRI="#Genero"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#ehInteressadoPor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Local"/>
     </Declaration>
     <Declaration>
@@ -61,9 +64,6 @@
         <NamedIndividual IRI="#Natasha"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#90-00"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Nacional"/>
     </Declaration>
     <Declaration>
@@ -77,9 +77,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Amado"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#70-80"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Decada"/>
@@ -246,75 +243,71 @@
     <EquivalentClasses>
         <Class IRI="#InteresseEmInternacional"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Internacional"/>
-            <Class IRI="#Musica"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#InteresseEmInternacional"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Internacional"/>
             <Class IRI="#Usuario"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#Internacional"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#InteresseEmMPB"/>
         <ObjectIntersectionOf>
             <Class IRI="#Usuario"/>
-            <ObjectUnionOf>
-                <Class IRI="#ArtistaMPB"/>
-                <DataHasValue>
-                    <DataProperty IRI="#nome_genero"/>
-                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPB</Literal>
-                </DataHasValue>
-            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#MPB"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#InteresseEmMusicasAntigas"/>
         <ObjectIntersectionOf>
-            <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
             <Class IRI="#Usuario"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#InteresseEmMusicasAtuais"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Atual"/>
             <Class IRI="#Usuario"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#Atual"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#InteresseEmNacional"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Nacional"/>
             <Class IRI="#Usuario"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#Nacional"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#InteresseEmPop"/>
         <ObjectIntersectionOf>
             <Class IRI="#Usuario"/>
-            <ObjectUnionOf>
-                <Class IRI="#ArtistaPop"/>
-                <DataHasValue>
-                    <DataProperty IRI="#nome_genero"/>
-                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
-                </DataHasValue>
-            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#Pop"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#InteresseEmRock"/>
         <ObjectIntersectionOf>
             <Class IRI="#Usuario"/>
-            <ObjectUnionOf>
-                <Class IRI="#ArtistaRock"/>
-                <DataHasValue>
-                    <DataProperty IRI="#nome_genero"/>
-                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
-                </DataHasValue>
-            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehInteressadoPor"/>
+                <Class IRI="#Rock"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -371,9 +364,15 @@
         <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
-            <ObjectComplementOf>
-                <Class IRI="#Atual"/>
-            </ObjectComplementOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#ano_musica"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -414,42 +413,6 @@
                 <DataProperty IRI="#nome_artista"/>
                 <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vanessa da Mata</Literal>
             </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#70-80"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#ano_musica"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1970</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1989</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#90-00"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#ano_musica"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1990</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2009</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -571,14 +534,6 @@
     <SubClassOf>
         <Class IRI="#Vanessa_da_Mata"/>
         <Class IRI="#ArtistaMPB"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#70-80"/>
-        <Class IRI="#Decada"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#90-00"/>
-        <Class IRI="#Decada"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#MPB"/>
@@ -921,6 +876,14 @@
         <NamedIndividual IRI="#Vermelho"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brasil</Literal>
     </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehInteressadoPor"/>
+        <Class IRI="#Usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehInteressadoPor"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#ano_musica"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>

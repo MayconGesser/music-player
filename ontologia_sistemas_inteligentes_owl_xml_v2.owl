@@ -22,9 +22,6 @@
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ehInteressadoPor"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#One"/>
     </Declaration>
     <Declaration>
@@ -32,6 +29,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Genero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ehInteressadoPor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Local"/>
@@ -43,25 +43,25 @@
         <Class IRI="#InteresseEmPop"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Vanessa_da_Mata"/>
+        <Class IRI="#ArtistaNacional"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ArtistaNacional"/>
+        <NamedIndividual IRI="#Vanessa_da_Mata"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MusicaNacional"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Musica"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#InteresseEmMusicasAtuais"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InteresseEmMusicasAntigas"/>
+        <Class IRI="#Musica"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Megadeth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteresseEmMusicasAntigas"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sozinho"/>
@@ -73,10 +73,10 @@
         <NamedIndividual IRI="#Pop"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Caetano_Veloso"/>
+        <Class IRI="#InteresseEmMPB"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InteresseEmMPB"/>
+        <NamedIndividual IRI="#Caetano_Veloso"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Brasil"/>
@@ -463,15 +463,15 @@
         <NamedIndividual IRI="#Brasil"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaInternacional"/>
         <NamedIndividual IRI="#Bruno_Mars"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaMPB"/>
         <NamedIndividual IRI="#Caetano_Veloso"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaNacional"/>
         <NamedIndividual IRI="#Capital_Inicial"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -495,11 +495,11 @@
         <NamedIndividual IRI="#MPB"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaInternacional"/>
         <NamedIndividual IRI="#Megadeth"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaInternacional"/>
         <NamedIndividual IRI="#Metallica"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -523,7 +523,7 @@
         <NamedIndividual IRI="#Rock"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaNacional"/>
         <NamedIndividual IRI="#Sepultura"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -547,7 +547,7 @@
         <NamedIndividual IRI="#Trust"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Artista"/>
+        <Class IRI="#ArtistaMPB"/>
         <NamedIndividual IRI="#Vanessa_da_Mata"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -570,16 +570,6 @@
         <NamedIndividual IRI="#Pop"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehDeOrigem"/>
-        <NamedIndividual IRI="#Bruno_Mars"/>
-        <NamedIndividual IRI="#Estados_Unidos"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehArtistaDoGenero"/>
-        <NamedIndividual IRI="#Caetano_Veloso"/>
-        <NamedIndividual IRI="#MPB"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Capital_Inicial"/>
         <NamedIndividual IRI="#Pop"/>
@@ -588,11 +578,6 @@
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Capital_Inicial"/>
         <NamedIndividual IRI="#Rock"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehDeOrigem"/>
-        <NamedIndividual IRI="#Capital_Inicial"/>
-        <NamedIndividual IRI="#Brasil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -615,19 +600,9 @@
         <NamedIndividual IRI="#Rock"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehDeOrigem"/>
-        <NamedIndividual IRI="#Megadeth"/>
-        <NamedIndividual IRI="#Estados_Unidos"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Metallica"/>
         <NamedIndividual IRI="#Rock"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehDeOrigem"/>
-        <NamedIndividual IRI="#Metallica"/>
-        <NamedIndividual IRI="#Estados_Unidos"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -648,11 +623,6 @@
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Sepultura"/>
         <NamedIndividual IRI="#Rock"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehDeOrigem"/>
-        <NamedIndividual IRI="#Sepultura"/>
-        <NamedIndividual IRI="#Brasil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -678,11 +648,6 @@
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Trust"/>
         <NamedIndividual IRI="#Megadeth"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ehArtistaDoGenero"/>
-        <NamedIndividual IRI="#Vanessa_da_Mata"/>
-        <NamedIndividual IRI="#MPB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>

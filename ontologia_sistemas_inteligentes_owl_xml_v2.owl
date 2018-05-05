@@ -212,10 +212,10 @@
         <Class IRI="#ArtistaMPB"/>
         <ObjectIntersectionOf>
             <Class IRI="#ArtistaNacional"/>
-            <ObjectSomeValuesFrom>
+            <ObjectHasValue>
                 <ObjectProperty IRI="#ehArtistaDoGenero"/>
-                <Class IRI="#MPB"/>
-            </ObjectSomeValuesFrom>
+                <NamedIndividual IRI="#MPB"/>
+            </ObjectHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -232,20 +232,20 @@
         <Class IRI="#ArtistaPop"/>
         <ObjectIntersectionOf>
             <Class IRI="#Artista"/>
-            <ObjectSomeValuesFrom>
+            <ObjectHasValue>
                 <ObjectProperty IRI="#ehArtistaDoGenero"/>
-                <Class IRI="#Pop"/>
-            </ObjectSomeValuesFrom>
+                <NamedIndividual IRI="#Pop"/>
+            </ObjectHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ArtistaRock"/>
         <ObjectIntersectionOf>
             <Class IRI="#Artista"/>
-            <ObjectSomeValuesFrom>
+            <ObjectHasValue>
                 <ObjectProperty IRI="#ehArtistaDoGenero"/>
-                <Class IRI="#Rock"/>
-            </ObjectSomeValuesFrom>
+                <NamedIndividual IRI="#Rock"/>
+            </ObjectHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>

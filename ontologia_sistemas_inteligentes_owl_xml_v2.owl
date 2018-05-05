@@ -22,13 +22,16 @@
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#ehInteressadoPor"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#One"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Genero"/>
+        <Class IRI="#ArtistaInternacional"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ehInteressadoPor"/>
+        <Class IRI="#Genero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Local"/>
@@ -43,16 +46,22 @@
         <NamedIndividual IRI="#Vanessa_da_Mata"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InteresseEmMusicasAtuais"/>
+        <Class IRI="#ArtistaNacional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaNacional"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Musica"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Megadeth"/>
+        <Class IRI="#InteresseEmMusicasAtuais"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEmMusicasAntigas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Megadeth"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sozinho"/>
@@ -64,10 +73,10 @@
         <NamedIndividual IRI="#Pop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InteresseEmMPB"/>
+        <NamedIndividual IRI="#Caetano_Veloso"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Caetano_Veloso"/>
+        <Class IRI="#InteresseEmMPB"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Brasil"/>
@@ -110,6 +119,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Rock"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ehDeOrigem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEmInternacional"/>
@@ -169,6 +181,9 @@
         <NamedIndividual IRI="#Finesse"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaInternacional"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Nomad"/>
     </Declaration>
     <Declaration>
@@ -184,13 +199,33 @@
         <Class IRI="#Artista"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#ArtistaMPB"/>
+        <Class IRI="#ArtistaInternacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Artista"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehDeOrigem"/>
+                <Class IRI="#Internacional"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ArtistaMPB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ArtistaNacional"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehArtistaDoGenero"/>
                 <Class IRI="#MPB"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ArtistaNacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Artista"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehDeOrigem"/>
+                <Class IRI="#Nacional"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -269,6 +304,26 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MusicaInternacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehCompostaPor"/>
+                <Class IRI="#ArtistaInternacional"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MusicaNacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#ehCompostaPor"/>
+                <Class IRI="#ArtistaNacional"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
@@ -288,7 +343,15 @@
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ArtistaInternacional"/>
+        <Class IRI="#Artista"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArtistaMPB"/>
+        <Class IRI="#ArtistaNacional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtistaNacional"/>
         <Class IRI="#Artista"/>
     </SubClassOf>
     <SubClassOf>
@@ -352,6 +415,14 @@
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MusicaInternacional"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaNacional"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Nacional"/>
         <Class IRI="#Local"/>
     </SubClassOf>
@@ -371,6 +442,14 @@
         <Class IRI="#Usuario"/>
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Atual"/>
+        <Class IRI="#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MusicaInternacional"/>
+        <Class IRI="#MusicaNacional"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Amado"/>
@@ -491,6 +570,16 @@
         <NamedIndividual IRI="#Pop"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <NamedIndividual IRI="#Bruno_Mars"/>
+        <NamedIndividual IRI="#Estados_Unidos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Caetano_Veloso"/>
+        <NamedIndividual IRI="#MPB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Capital_Inicial"/>
         <NamedIndividual IRI="#Pop"/>
@@ -499,6 +588,11 @@
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Capital_Inicial"/>
         <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <NamedIndividual IRI="#Capital_Inicial"/>
+        <NamedIndividual IRI="#Brasil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -521,9 +615,19 @@
         <NamedIndividual IRI="#Rock"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <NamedIndividual IRI="#Megadeth"/>
+        <NamedIndividual IRI="#Estados_Unidos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Metallica"/>
         <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <NamedIndividual IRI="#Metallica"/>
+        <NamedIndividual IRI="#Estados_Unidos"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -544,6 +648,11 @@
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <NamedIndividual IRI="#Sepultura"/>
         <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <NamedIndividual IRI="#Sepultura"/>
+        <NamedIndividual IRI="#Brasil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -659,6 +768,10 @@
         <Class IRI="#Musica"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <Class IRI="#Artista"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#ehInteressadoPor"/>
         <Class IRI="#Usuario"/>
     </ObjectPropertyDomain>
@@ -673,6 +786,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ehCompostaPor"/>
         <Class IRI="#Artista"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehDeOrigem"/>
+        <Class IRI="#Local"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ehInteressadoPor"/>
@@ -739,6 +856,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_44ad4d2c_857c_448a_b4f4_4ad9e97fecdb</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MusicaAntiga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ehDeOrigem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ehArtistaDeOrigem</Literal>
     </AnnotationAssertion>
 </Ontology>
 

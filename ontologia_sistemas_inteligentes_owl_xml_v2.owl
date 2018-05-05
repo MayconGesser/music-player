@@ -16,10 +16,13 @@
         <NamedIndividual IRI="#Tropicalia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#One"/>
+        <NamedIndividual IRI="#Capital_Inicial"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bruno_Mars"/>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Genero"/>
@@ -37,10 +40,16 @@
         <Class IRI="#InteresseEmPop"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Vanessa_da_Mata"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#InteresseEmMusicasAtuais"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Musica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Megadeth"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEmMusicasAntigas"/>
@@ -49,7 +58,19 @@
         <NamedIndividual IRI="#Sozinho"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Rock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pop"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#InteresseEmMPB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caetano_Veloso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sepultura"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ontologia_Recomendacao"/>
@@ -67,25 +88,25 @@
         <Class IRI="#Nacional"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Bruno_Mars"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ArtistaPop"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEmNacional"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sepultura"/>
+        <ObjectProperty IRI="#ehMusicaDoGenero"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Amado"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Decada"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rock"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vanessa_da_Mata"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEmInternacional"/>
@@ -100,13 +121,7 @@
         <DataProperty IRI="#pais_de_origem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Capital_Inicial"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#nome_genero"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Megadeth"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Fogo"/>
@@ -127,19 +142,19 @@
         <NamedIndividual IRI="#Vermelho"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pop"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#ano_musica"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Usuario"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Caetano_Veloso"/>
+        <NamedIndividual IRI="#Metallica"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Territory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MPB"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#nome_musica"/>
@@ -157,44 +172,8 @@
         <Class IRI="#ArtistaRock"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MPB"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Metallica"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Artista"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#ArtistaMPB"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_genero"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPB</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ArtistaPop"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_genero"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ArtistaRock"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_genero"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Atual"/>
         <ObjectIntersectionOf>
@@ -211,52 +190,12 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Bruno_Mars"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bruno Mars</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Caetano_Veloso"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Caetano Veloso</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Capital_Inicial"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Capital Inicial</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#InteresseEmInternacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Usuario"/>
             <ObjectAllValuesFrom>
                 <ObjectProperty IRI="#ehInteressadoPor"/>
                 <Class IRI="#Internacional"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#InteresseEmMPB"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Usuario"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#ehInteressadoPor"/>
-                <Class IRI="#MPB"/>
             </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -291,63 +230,12 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#InteresseEmPop"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Usuario"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#ehInteressadoPor"/>
-                <Class IRI="#Pop"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#InteresseEmRock"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Usuario"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#ehInteressadoPor"/>
-                <Class IRI="#Rock"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#Internacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
             <ObjectComplementOf>
                 <Class IRI="#Nacional"/>
             </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#MPB"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <Class IRI="#Nacional"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_genero"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPB</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Megadeth"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Megadeth</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Metallica"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Metallica</Literal>
-            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -375,46 +263,6 @@
             </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Pop"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_genero"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pop</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Rock"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_genero"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Sepultura"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sepultura</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Vanessa_da_Mata"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Musica"/>
-            <DataHasValue>
-                <DataProperty IRI="#nome_artista"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vanessa da Mata</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Artista"/>
         <Class IRI="#Ontologia_Recomendacao"/>
@@ -434,18 +282,6 @@
     <SubClassOf>
         <Class IRI="#Atual"/>
         <Class IRI="#Decada"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bruno_Mars"/>
-        <Class IRI="#ArtistaPop"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Caetano_Veloso"/>
-        <Class IRI="#ArtistaMPB"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Capital_Inicial"/>
-        <Class IRI="#ArtistaRock"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Decada"/>
@@ -492,18 +328,6 @@
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MPB"/>
-        <Class IRI="#Genero"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Megadeth"/>
-        <Class IRI="#ArtistaRock"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Metallica"/>
-        <Class IRI="#ArtistaRock"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Musica"/>
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
@@ -516,30 +340,9 @@
         <Class IRI="#Decada"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pop"/>
-        <Class IRI="#Genero"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rock"/>
-        <Class IRI="#Genero"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sepultura"/>
-        <Class IRI="#ArtistaRock"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Usuario"/>
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vanessa_da_Mata"/>
-        <Class IRI="#ArtistaMPB"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#MPB"/>
-        <Class IRI="#Pop"/>
-        <Class IRI="#Rock"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Amado"/>
@@ -547,6 +350,18 @@
     <ClassAssertion>
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Blackened"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Bruno_Mars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Caetano_Veloso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Capital_Inicial"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Musica"/>
@@ -561,6 +376,18 @@
         <NamedIndividual IRI="#Grenade"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="#MPB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Megadeth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Metallica"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Natasha"/>
     </ClassAssertion>
@@ -571,6 +398,18 @@
     <ClassAssertion>
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#One"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="#Rock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Sepultura"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Musica"/>
@@ -593,18 +432,82 @@
         <NamedIndividual IRI="#Trust"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Artista"/>
+        <NamedIndividual IRI="#Vanessa_da_Mata"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Vermelho"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <NamedIndividual IRI="#Amado"/>
+        <NamedIndividual IRI="#Vanessa_da_Mata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <NamedIndividual IRI="#Blackened"/>
+        <NamedIndividual IRI="#Metallica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Bruno_Mars"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Caetano_Veloso"/>
+        <NamedIndividual IRI="#MPB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Capital_Inicial"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Capital_Inicial"/>
+        <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <NamedIndividual IRI="#Finesse"/>
+        <NamedIndividual IRI="#Bruno_Mars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <NamedIndividual IRI="#Fogo"/>
+        <NamedIndividual IRI="#Vanessa_da_Mata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <NamedIndividual IRI="#Grenade"/>
+        <NamedIndividual IRI="#Bruno_Mars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Megadeth"/>
+        <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Metallica"/>
+        <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Sepultura"/>
+        <NamedIndividual IRI="#Rock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <NamedIndividual IRI="#Vanessa_da_Mata"/>
+        <NamedIndividual IRI="#MPB"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ano_musica"/>
         <NamedIndividual IRI="#Amado"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2004</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nome_artista"/>
-        <NamedIndividual IRI="#Amado"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Vanessa da Mata</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#nome_genero"/>
@@ -622,11 +525,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1989</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#nome_artista"/>
-        <NamedIndividual IRI="#Blackened"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metallica</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#nome_genero"/>
         <NamedIndividual IRI="#Blackened"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Rock</Literal>
@@ -640,11 +538,6 @@
         <DataProperty IRI="#ano_musica"/>
         <NamedIndividual IRI="#Finesse"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2012</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nome_artista"/>
-        <NamedIndividual IRI="#Finesse"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bruno Mars</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#nome_genero"/>
@@ -662,11 +555,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2006</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#nome_artista"/>
-        <NamedIndividual IRI="#Fogo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Vanessa da Mata</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#nome_genero"/>
         <NamedIndividual IRI="#Fogo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MPB</Literal>
@@ -680,11 +568,6 @@
         <DataProperty IRI="#ano_musica"/>
         <NamedIndividual IRI="#Grenade"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2013</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nome_artista"/>
-        <NamedIndividual IRI="#Grenade"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bruno Mars</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#nome_genero"/>
@@ -877,11 +760,35 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brasil</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <Class IRI="#Artista"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <Class IRI="#Musica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#ehInteressadoPor"/>
         <Class IRI="#Usuario"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehMusicaDoGenero"/>
+        <Class IRI="#Musica"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehArtistaDoGenero"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <Class IRI="#Artista"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ehInteressadoPor"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehMusicaDoGenero"/>
         <Class IRI="#Genero"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>

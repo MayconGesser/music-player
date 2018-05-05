@@ -322,20 +322,20 @@
         <Class IRI="#MusicaInternacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
-            <ObjectAllValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehCompostaPor"/>
                 <Class IRI="#ArtistaInternacional"/>
-            </ObjectAllValuesFrom>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#MusicaNacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
-            <ObjectAllValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehCompostaPor"/>
                 <Class IRI="#ArtistaNacional"/>
-            </ObjectAllValuesFrom>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>

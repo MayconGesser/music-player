@@ -85,6 +85,9 @@
         <NamedIndividual IRI="#Brasil"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaMPB"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Sepultura"/>
     </Declaration>
     <Declaration>
@@ -115,6 +118,9 @@
         <ObjectProperty IRI="#ehMusicaDoGenero"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaPop"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Amado"/>
     </Declaration>
     <Declaration>
@@ -125,6 +131,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ehDeOrigem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaRock"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEmInternacional"/>
@@ -329,12 +338,42 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MusicaMPB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#ehCompostaPor"/>
+                <Class IRI="#ArtistaMPB"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MusicaNacional"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehCompostaPor"/>
                 <Class IRI="#ArtistaNacional"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MusicaPop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#ehCompostaPor"/>
+                <Class IRI="#ArtistaPop"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MusicaRock"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#ehCompostaPor"/>
+                <Class IRI="#ArtistaRock"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -423,7 +462,19 @@
         <Class IRI="#Musica"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MusicaMPB"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MusicaNacional"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaPop"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRock"/>
         <Class IRI="#Musica"/>
     </SubClassOf>
     <SubClassOf>

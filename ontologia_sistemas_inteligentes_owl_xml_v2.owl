@@ -82,6 +82,9 @@
         <Class IRI="#MusicaAntiga"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UsuarioInteressadoEmRock"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Pop"/>
     </Declaration>
     <Declaration>
@@ -109,6 +112,12 @@
         <NamedIndividual IRI="#Dias_Melhores"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UsuarioInteressadoEmPop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsuarioInteressadoEmMPB"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Internacional"/>
     </Declaration>
     <Declaration>
@@ -119,6 +128,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Natasha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#usuario1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Nacional"/>
@@ -148,9 +160,6 @@
         <ObjectProperty IRI="#ehCompostaPor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#temInteressePor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Rock"/>
     </Declaration>
     <Declaration>
@@ -178,6 +187,12 @@
         <DataProperty IRI="#pais_de_origem"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UsuarioInteressadoEmInternacional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsuarioInteressadoEmAtual"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Naar_Himmelen_Klarner"/>
     </Declaration>
     <Declaration>
@@ -194,6 +209,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Noruega"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsuarioInteressadoEmAntiga"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Vermelho"/>
@@ -224,6 +242,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#nome_musica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsuarioInteressadoEmNacional"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Finesse"/>
@@ -379,6 +400,76 @@
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmAntiga"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#MusicaAntiga"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmAtual"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#Atual"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmInternacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#MusicaInternacional"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmMPB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#MusicaMPB"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmNacional"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#MusicaNacional"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmPop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#MusicaPop"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsuarioInteressadoEmRock"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Usuario"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#estahOuvindo"/>
+                <Class IRI="#MusicaRock"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Artista"/>
         <Class IRI="#Ontologia_Recomendacao"/>
@@ -495,6 +586,34 @@
         <Class IRI="#Usuario"/>
         <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmAntiga"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmAtual"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmInternacional"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmMPB"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmNacional"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmPop"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsuarioInteressadoEmRock"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Atual"/>
         <Class IRI="#MusicaAntiga"/>
@@ -651,6 +770,10 @@
         <Class IRI="#Musica"/>
         <NamedIndividual IRI="#Vermelho"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Usuario"/>
+        <NamedIndividual IRI="#usuario1"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Amado"/>
@@ -860,6 +983,31 @@
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Vermelho"/>
         <NamedIndividual IRI="#Vanessa_da_Mata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estahOuvindo"/>
+        <NamedIndividual IRI="#usuario1"/>
+        <NamedIndividual IRI="#Han_Som_Reiste"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estahOuvindo"/>
+        <NamedIndividual IRI="#usuario1"/>
+        <NamedIndividual IRI="#Naar_Himmelen_Klarner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estahOuvindo"/>
+        <NamedIndividual IRI="#usuario1"/>
+        <NamedIndividual IRI="#She-Wolf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estahOuvindo"/>
+        <NamedIndividual IRI="#usuario1"/>
+        <NamedIndividual IRI="#Territory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estahOuvindo"/>
+        <NamedIndividual IRI="#usuario1"/>
+        <NamedIndividual IRI="#Trust"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ano_musica"/>
@@ -989,10 +1137,6 @@
         <ObjectProperty IRI="#estahOuvindo"/>
         <Class IRI="#Usuario"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#temInteressePor"/>
-        <Class IRI="#Usuario"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ehArtistaDoGenero"/>
         <Class IRI="#Genero"/>
@@ -1019,10 +1163,6 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#estahOuvindo"/>
-        <Class IRI="#Musica"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#temInteressePor"/>
         <Class IRI="#Musica"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>

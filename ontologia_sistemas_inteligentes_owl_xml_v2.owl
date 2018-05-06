@@ -25,10 +25,10 @@
         <ObjectProperty IRI="#ehInteressadoPor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="#One"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#One"/>
+        <Class IRI="#Genero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArtistaInternacional"/>
@@ -73,10 +73,10 @@
         <Class IRI="#MusicaAntiga"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UsuarioInteressadoEmRock"/>
+        <NamedIndividual IRI="#Pop"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Pop"/>
+        <Class IRI="#UsuarioInteressadoEmRock"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Caetano_Veloso"/>
@@ -92,9 +92,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sepultura"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ontologia_Recomendacao"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dias_Melhores"/>
@@ -121,10 +118,10 @@
         <NamedIndividual IRI="#usuario1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Nacional"/>
+        <ObjectProperty IRI="#ehFaDeArtista"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ehFaDeArtista"/>
+        <Class IRI="#Nacional"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Bruno_Mars"/>
@@ -163,10 +160,10 @@
         <Class IRI="#Atual"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#pais_de_origem"/>
+        <Class IRI="#UsuarioInteressadoEmInternacional"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UsuarioInteressadoEmInternacional"/>
+        <DataProperty IRI="#pais_de_origem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UsuarioInteressadoEmAtual"/>
@@ -190,10 +187,10 @@
         <NamedIndividual IRI="#Noruega"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UsuarioInteressadoEmAntiga"/>
+        <NamedIndividual IRI="#Vermelho"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Vermelho"/>
+        <Class IRI="#UsuarioInteressadoEmAntiga"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Estados_Unidos"/>
@@ -229,10 +226,10 @@
         <NamedIndividual IRI="#Finesse"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Nomad"/>
+        <Class IRI="#MusicaInternacional"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MusicaInternacional"/>
+        <NamedIndividual IRI="#Nomad"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Blackened"/>
@@ -450,10 +447,6 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#Artista"/>
-        <Class IRI="#Ontologia_Recomendacao"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ArtistaInternacional"/>
         <Class IRI="#Artista"/>
     </SubClassOf>
@@ -478,24 +471,12 @@
         <Class IRI="#Musica"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Genero"/>
-        <Class IRI="#Ontologia_Recomendacao"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Internacional"/>
         <Class IRI="#Local"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Local"/>
-        <Class IRI="#Ontologia_Recomendacao"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#MPB"/>
         <Class IRI="#Genero"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Musica"/>
-        <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MusicaAntiga"/>
@@ -532,10 +513,6 @@
     <SubClassOf>
         <Class IRI="#Rock"/>
         <Class IRI="#Genero"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Usuario"/>
-        <Class IRI="#Ontologia_Recomendacao"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UsuarioInteressadoEmAntiga"/>

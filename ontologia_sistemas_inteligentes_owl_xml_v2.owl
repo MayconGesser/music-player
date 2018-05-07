@@ -16,6 +16,9 @@
         <NamedIndividual IRI="#Tropicalia"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Capital_Inicial"/>
     </Declaration>
     <Declaration>
@@ -40,6 +43,9 @@
         <DataProperty IRI="#nome_artista"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaRecomendadaInternacional"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Ea_Lord_of_the_Depths"/>
     </Declaration>
     <Declaration>
@@ -61,6 +67,9 @@
         <Class IRI="#Musica"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaRecomendadaAtual"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Megadeth"/>
     </Declaration>
     <Declaration>
@@ -71,6 +80,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MusicaAntiga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaRecomendada"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Pop"/>
@@ -181,10 +193,19 @@
         <NamedIndividual IRI="#Trust"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MusicaRecomendadaNacional"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#She-Wolf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Noruega"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaRecomendadaAntiga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaRecomendadaRock"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Vermelho"/>
@@ -194,6 +215,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Estados_Unidos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaRecomendadaPop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicaRecomendadaMPB"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pop"/>
@@ -367,6 +394,19 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MusicaRecomendadaAntiga"/>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#MusicaAntiga"/>
+                <Class IRI="#MusicaRecomendada"/>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#ehRecomendadaA"/>
+                <Class IRI="#UsuarioInteressadoEmAntiga"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MusicaRock"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
@@ -497,6 +537,66 @@
     <SubClassOf>
         <Class IRI="#MusicaPop"/>
         <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendada"/>
+        <Class IRI="#Musica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaAntiga"/>
+        <Class IRI="#MusicaAntiga"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaAntiga"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaAtual"/>
+        <Class IRI="#Atual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaAtual"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaInternacional"/>
+        <Class IRI="#MusicaInternacional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaInternacional"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaMPB"/>
+        <Class IRI="#MusicaMPB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaMPB"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaNacional"/>
+        <Class IRI="#MusicaNacional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaNacional"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaPop"/>
+        <Class IRI="#MusicaPop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaPop"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaRock"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicaRecomendadaRock"/>
+        <Class IRI="#MusicaRock"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MusicaRock"/>
@@ -1062,6 +1162,10 @@
         <Class IRI="#Musica"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <Class IRI="#MusicaRecomendada"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#estahOuvindo"/>
         <Class IRI="#Usuario"/>
     </ObjectPropertyDomain>
@@ -1088,6 +1192,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ehMusicaDoGenero"/>
         <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <Class IRI="#Usuario"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#estahOuvindo"/>

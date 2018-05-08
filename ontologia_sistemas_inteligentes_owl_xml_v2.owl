@@ -408,10 +408,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaAntiga"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#MusicaAntiga"/>
-                <Class IRI="#MusicaRecomendada"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#MusicaAntiga"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmAntiga"/>
@@ -421,10 +418,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaAtual"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#Atual"/>
-                <Class IRI="#MusicaRecomendada"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#Atual"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmAtual"/>
@@ -434,10 +428,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaInternacional"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#MusicaInternacional"/>
-                <Class IRI="#MusicaRecomendada"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#MusicaInternacional"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmInternacional"/>
@@ -447,10 +438,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaMPB"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#MusicaMPB"/>
-                <Class IRI="#MusicaRecomendada"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#MusicaMPB"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmMPB"/>
@@ -460,10 +448,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaNacional"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#MusicaNacional"/>
-                <Class IRI="#MusicaRecomendada"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#MusicaNacional"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmNacional"/>
@@ -473,10 +458,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaPop"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#MusicaPop"/>
-                <Class IRI="#MusicaRecomendada"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#MusicaPop"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmPop"/>
@@ -486,10 +468,7 @@
     <EquivalentClasses>
         <Class IRI="#MusicaRecomendadaRock"/>
         <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#MusicaRecomendada"/>
-                <Class IRI="#MusicaRock"/>
-            </ObjectIntersectionOf>
+            <Class IRI="#MusicaRock"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#ehRecomendadaA"/>
                 <Class IRI="#UsuarioInteressadoEmRock"/>
@@ -906,6 +885,11 @@
         <NamedIndividual IRI="#Vanessa_da_Mata"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Amado"/>
+        <NamedIndividual IRI="#usuario3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Blackened"/>
         <NamedIndividual IRI="#Metallica"/>
@@ -969,6 +953,11 @@
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Dias_Melhores"/>
         <NamedIndividual IRI="#Jota_Quest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Dias_Melhores"/>
+        <NamedIndividual IRI="#usuario3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>

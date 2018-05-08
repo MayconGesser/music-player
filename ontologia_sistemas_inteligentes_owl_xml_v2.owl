@@ -256,6 +256,9 @@
         <DataProperty IRI="#nome_musica"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#usuario3"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UsuarioInteressadoEmNacional"/>
     </Declaration>
     <Declaration>
@@ -893,6 +896,10 @@
         <Class IRI="#Usuario"/>
         <NamedIndividual IRI="#usuario2"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Usuario"/>
+        <NamedIndividual IRI="#usuario3"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Amado"/>
@@ -1109,6 +1116,11 @@
         <NamedIndividual IRI="#Vanessa_da_Mata"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Vermelho"/>
+        <NamedIndividual IRI="#usuario3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#avaliouBemAMusica"/>
         <NamedIndividual IRI="#usuario1"/>
         <NamedIndividual IRI="#Territory"/>
@@ -1117,6 +1129,31 @@
         <ObjectProperty IRI="#avaliouBemAMusica"/>
         <NamedIndividual IRI="#usuario1"/>
         <NamedIndividual IRI="#Trust"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avaliouBemAMusica"/>
+        <NamedIndividual IRI="#usuario2"/>
+        <NamedIndividual IRI="#Everything_Counts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avaliouBemAMusica"/>
+        <NamedIndividual IRI="#usuario2"/>
+        <NamedIndividual IRI="#Facil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avaliouBemAMusica"/>
+        <NamedIndividual IRI="#usuario2"/>
+        <NamedIndividual IRI="#Grenade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avaliouBemAMusica"/>
+        <NamedIndividual IRI="#usuario3"/>
+        <NamedIndividual IRI="#Fogo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avaliouBemAMusica"/>
+        <NamedIndividual IRI="#usuario3"/>
+        <NamedIndividual IRI="#Tropicalia"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ano_musica"/>

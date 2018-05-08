@@ -265,6 +265,9 @@
         <NamedIndividual IRI="#Finesse"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Enjoy_The_Silence"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Nomad"/>
     </Declaration>
     <Declaration>
@@ -760,6 +763,10 @@
         <NamedIndividual IRI="#Ea_Lord_of_the_Depths"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Musica"/>
+        <NamedIndividual IRI="#Enjoy_The_Silence"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Internacional"/>
         <NamedIndividual IRI="#Estados_Unidos"/>
     </ClassAssertion>
@@ -957,12 +964,32 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehRecomendadaA"/>
         <NamedIndividual IRI="#Dias_Melhores"/>
+        <NamedIndividual IRI="#usuario1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Dias_Melhores"/>
+        <NamedIndividual IRI="#usuario2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Dias_Melhores"/>
         <NamedIndividual IRI="#usuario3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Ea_Lord_of_the_Depths"/>
         <NamedIndividual IRI="#Burzum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehCompostaPor"/>
+        <NamedIndividual IRI="#Enjoy_The_Silence"/>
+        <NamedIndividual IRI="#Depeche_Mode"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Enjoy_The_Silence"/>
+        <NamedIndividual IRI="#usuario2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -973,6 +1000,11 @@
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Facil"/>
         <NamedIndividual IRI="#Jota_Quest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Facil"/>
+        <NamedIndividual IRI="#usuario2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -1040,9 +1072,19 @@
         <NamedIndividual IRI="#Capital_Inicial"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Natasha"/>
+        <NamedIndividual IRI="#usuario3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#Nomad"/>
         <NamedIndividual IRI="#Sepultura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#Nomad"/>
+        <NamedIndividual IRI="#usuario1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -1068,6 +1110,11 @@
         <ObjectProperty IRI="#ehCompostaPor"/>
         <NamedIndividual IRI="#She-Wolf"/>
         <NamedIndividual IRI="#Megadeth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ehRecomendadaA"/>
+        <NamedIndividual IRI="#She-Wolf"/>
+        <NamedIndividual IRI="#usuario1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#ehCompostaPor"/>
@@ -1163,6 +1210,11 @@
         <DataProperty IRI="#ano_musica"/>
         <NamedIndividual IRI="#Ea_Lord_of_the_Depths"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1992</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ano_musica"/>
+        <NamedIndividual IRI="#Enjoy_The_Silence"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1990</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ano_musica"/>

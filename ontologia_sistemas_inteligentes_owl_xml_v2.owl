@@ -28,9 +28,6 @@
         <ObjectProperty IRI="#ehRecomendadoAMusica"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ehInteressadoPor"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#One"/>
     </Declaration>
     <Declaration>
@@ -41,9 +38,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Local"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#nome_artista"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MusicaRecomendadaInternacional"/>
@@ -133,9 +127,6 @@
         <NamedIndividual IRI="#usuario1"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ehFaDeArtista"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Nacional"/>
     </Declaration>
     <Declaration>
@@ -143,9 +134,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ArtistaPop"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#ehMusicaDoGenero"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MusicaPop"/>
@@ -175,9 +163,6 @@
         <Class IRI="#UsuarioInteressadoEmInternacional"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#pais_de_origem"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UsuarioInteressadoEmAtual"/>
     </Declaration>
     <Declaration>
@@ -203,9 +188,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#She-Wolf"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#interesse_em"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MusicaRecomendadaAntiga"/>
@@ -251,9 +233,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MPB"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#nome_musica"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#usuario3"/>
@@ -1306,11 +1285,6 @@
         <NamedIndividual IRI="#Vermelho"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2002</Literal>
     </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#interesse_em"/>
-        <NamedIndividual IRI="#usuario1"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock</Literal>
-    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#ehRecomendadaA"/>
         <ObjectProperty IRI="#ehRecomendadoAMusica"/>
@@ -1330,18 +1304,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#ehDeOrigem"/>
         <Class IRI="#Artista"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#ehFaDeArtista"/>
-        <Class IRI="#Usuario"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#ehInteressadoPor"/>
-        <Class IRI="#Usuario"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#ehMusicaDoGenero"/>
-        <Class IRI="#Musica"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#ehRecomendadaA"/>
@@ -1368,18 +1330,6 @@
         <Class IRI="#Local"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#ehFaDeArtista"/>
-        <Class IRI="#Artista"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#ehInteressadoPor"/>
-        <Class IRI="#Genero"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#ehMusicaDoGenero"/>
-        <Class IRI="#Genero"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#ehRecomendadaA"/>
         <Class IRI="#Usuario"/>
     </ObjectPropertyRange>
@@ -1391,61 +1341,13 @@
         <DataProperty IRI="#ano_musica"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#interesse_em"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#nome_artista"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#nome_musica"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#pais_de_origem"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#ano_musica"/>
         <Class IRI="#Musica"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#interesse_em"/>
-        <Class IRI="#Usuario"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#nome_artista"/>
-        <Class IRI="#Artista"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#nome_musica"/>
-        <Class IRI="#Musica"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#pais_de_origem"/>
-        <Class IRI="#Artista"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#ano_musica"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#interesse_em"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nome_artista"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nome_musica"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#pais_de_origem"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

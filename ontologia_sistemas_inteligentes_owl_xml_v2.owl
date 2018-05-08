@@ -354,6 +354,16 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#Musica"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Musica"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#ehCompostaPor"/>
+                <Class IRI="#Artista"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MusicaAntiga"/>
         <ObjectIntersectionOf>
             <Class IRI="#Musica"/>
